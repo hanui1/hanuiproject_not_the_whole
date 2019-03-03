@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 import blog.views
 import accounte.views
-from django.conf import settings
+# from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import url
 # django.contrib.auth.views.LoginView
