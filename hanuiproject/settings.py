@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     # 'allauth.socialaccount.providers.naver',
     # # 'allauth.socialaccount.providers.facebook',
 
-    'imagekit',
+    # 'imagekit',
 ]
 
 MIDDLEWARE = [
