@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br>
+<br>
+<br>
+
+    <div class="detail-container">
+            <ul class="breadcrumbs">
+                    [{{ object.category.name }}]
+            </ul>
+        <h2> {{blog.title}}</h2>
+        <p> {{blog.body}}</p>
+        <br><br>
+        <a href="{% url 'blog:blog' %}">홈으로</a>
+    </div>
+
+
+    <br>
+    <br>
+    <p> 같은 카테고리 다른 글</p>
+    <br>
+    {% for blog in queryset %}
+        <!-- <div class="container"> -->
+            <div class= "flex">
+              <a href="{% url 'blog:detail' blog.id %}" style="text-decoration : none" class="left">
+                  <p>{{ blog.title }}</p>
+              </a>
+              <p class="right">{{ blog.pub_date }}</p>
+            </div>
+        <!-- </div> -->
+        <hr>
+    {% endfor %}
+{% endblock %}

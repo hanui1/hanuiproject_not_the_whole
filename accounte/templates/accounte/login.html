@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load socialaccount %}
+{% providers_media_js %}
+
+
+
+<h1>Login</h1>
+<a href="/accounte/signup">회원가입</a>
+<a href= "{% provider_login_url 'google' %}"> 구글 로그인 </a>
+<br>
+
+<form method="POST" action="{% url 'login'%}">
+
+    {% csrf_token %}
+    Username:
+    <br>
+    <input name="username" type="text" value="">
+    <br>
+    Password:
+    <br>
+    <input name="password" type="password" value="">
+    <br>
+    <br>
+    <input class="btn btn-primary" type="submit" value="Login">
+</form>
+
+{% endblock %}
