@@ -43,14 +43,14 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     #allauth
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
+    # 'allauth',
+    # 'allauth.account',
+    # 'allauth.socialaccount',
 
-    #provider
-    'allauth.socialaccount.providers.google',
-    'allauth.socialaccount.providers.naver',
-    # 'allauth.socialaccount.providers.facebook',
+    # #provider
+    # 'allauth.socialaccount.providers.google',
+    # 'allauth.socialaccount.providers.naver',
+    # # 'allauth.socialaccount.providers.facebook',
 
     'imagekit',
 ]
